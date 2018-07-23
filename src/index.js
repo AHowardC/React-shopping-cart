@@ -1,5 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.css';
+import Counter from './components/counter';
 
-let element = <h1>Hello World</h1>;
-ReactDOM.render(element,document.getElementById('root'));
+
+
+
+
+// let element = <h1>Hello World</h1>;
+ReactDOM.render(<Counter/>, document.getElementById('root'));
