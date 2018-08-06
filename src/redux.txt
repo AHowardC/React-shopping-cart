@@ -1,0 +1,6 @@
+store holds all of the state for the entire application.
+
+actions are payloads of information that send data from the application to the store.
+actions are the only source of information for the store.
+actions are sent to the store using the dispatch() function. store.dispatch().
+actions are plain javascript objects. actions must have a type property in its object.
