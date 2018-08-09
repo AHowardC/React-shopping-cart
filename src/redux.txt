@@ -2,5 +2,7 @@ store holds all of the state for the entire application.
 
 actions are payloads of information that send data from the application to the store.
 actions are the only source of information for the store.
-actions are sent to the store using the dispatch() function. store.dispatch().
+actions are sent to the store using the dispatch() function. store.dispatch(action).
 actions are plain javascript objects. actions must have a type property in its object.
+
+Reducers are pure functions(a function where the return value is only determined by its inputs without any sideEffects) that takes the initial state and an action as arguments and returns the next state 
