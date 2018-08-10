@@ -7,4 +7,4 @@ actions are plain javascript objects. actions must have a type property in its o
 
 Reducers are pure functions(a function where the return value is only determined by its inputs without any sideEffects) that takes the initial state and an action as arguments and returns the next state.
 
-combineReducers() combines reducers (functions that take initial state and an action(a javascript object) as its two arguments). 
+combineReducers() combines reducers (functions that take initial state and an action(a javascript object) as its two arguments) . 
