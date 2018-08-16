@@ -5,8 +5,12 @@ class Counter extends Component {
         count: 0,
         tags: ['tag1', 'tag2', 'tag3'],
         imageUrl: 'https://picsum.photos/201',
-
     };
+
+    // constructor() {
+    //     super();
+    //     this.handleIncrement = this.handleIncrement.bind(this);
+    // }
 
     styles = {
         fontSize: '50px',
@@ -19,8 +23,10 @@ class Counter extends Component {
         return <ul>{this.state.tags.map(tag => <li key={tag}>{tag}</li>)}</ul>;
     }
 
-    handleIncrement() {
-        console.log('Increment Clicked');
+    // when you need to bind this keyword in a class use es6 arrow function so you dont need to set up a constructor to bind this keyword for eventhandlers
+
+    handleIncrement = () => {
+        console.log('Increment Clicked', this);
     }
 
     render() {
