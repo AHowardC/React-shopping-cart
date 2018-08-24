@@ -11,3 +11,13 @@ Reducers are pure functions(a function where the return value is only determined
 combineReducers() combines reducers (functions that take initial state and an action(a javascript object) as its two arguments)
 
 Postman is a rest client allows you to make api request to any endpoint to any server
+
+props can be reached by all components but state is private(internal) to the component.
+props is read only.  props cannot be modified. 
+
+The component that owns a piece of the state, should be the one modifying it.
+
+when you need to bind this keyword in a class use es6 arrow function so you dont need to set up a constructor to bind this keyword for eventhandlers
+
+A controlled component does not have its own local state. it recieves all data via props and raises events whenever data needs to change. its controlled by its parent.
+
